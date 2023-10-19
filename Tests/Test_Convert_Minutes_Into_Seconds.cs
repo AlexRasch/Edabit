@@ -14,13 +14,14 @@ namespace Tests
         }
 
         [Theory]
-        [TestCase(5, 300)]
-        [TestCase(3, 180)]
-        [TestCase(2, 120)]
+        [TestCase(310, 5)]
+        [TestCase(300, 5)]
+        [TestCase(180, 3)]
+        [TestCase(120, 2)]
         public void Convert_Minutes_Into_Seconds_Test(int x, int shouldReturn)
         {
             // https://edabit.com/challenge/bizjGL4wyd8PwR4Ke
-            Assert.AreEqual(Domain.Convert_Minutes_Into_Seconds.Sum(x), shouldReturn);
+            Assert.AreEqual(Domain.Convert_Minutes_Into_Seconds.Convert(x), shouldReturn);
 
         }
     }

@@ -2,7 +2,7 @@ using Domain;
 
 namespace Tests
 {
-    public class Tests
+    public class Tests_Return_The_Sum_Of_Two_Number
     {
         [SetUp]
         public void Setup()
