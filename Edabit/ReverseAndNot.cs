@@ -10,24 +10,24 @@ namespace Domain
     {
         public static string Go(int input)
         {
-            // Reverse
-            char[] firstPart = input.ToString().ToCharArray();
-            Array.Reverse(firstPart);
+            // Linq
+            //string inputStr = input.ToString();
+            //string reversedStr = new string(inputStr.Reverse().ToArray());
+            //return inputStr + reversedStr;
+            
+            // Convert to string
+            string inputStr = input.ToString();
+            int length = inputStr.Length;
 
-            // Keep as it is
-            char[] secPart = input.ToString().ToCharArray();
+            char[] output = new char[length * 2];
 
-            // Create output string
-            char[] output = new char[firstPart.Length * 2];
-            for (int i = 0; i < firstPart.Length; i++)
+            // Create output
+            for (int i = 0; i < length; i++)
             {
-                output[i] = firstPart[i];
+                char digit = inputStr[i];
+                output[i] = digit;
+                output[length * 2 - 1 - i] = digit;
             }
-            for (int i = 0; i < secPart.Length; i++)
-            {
-                output[i + secPart.Length] = secPart[i];
-            }
-
 
             return new string(output);
         }
