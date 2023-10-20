@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain;
 
 namespace Tests
 {
@@ -29,7 +30,8 @@ namespace Tests
         public void Array_of_Multiples_Test(int input1, int input2, int[] shouldReturn)
         {
             // https://edabit.com/challenge/L2fwjYi9YixY8kJfK
-            Assert.That(Array_of_Multiples.ArrayOfMultiples(input1, input2), shouldReturn);
+            Assert.Equals(Domain.Array_Of_Multiples.ArrayOfMultiples(input1, input2), shouldReturn);
+            
         }
     }
 }
