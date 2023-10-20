@@ -27,7 +27,7 @@ namespace Tests
         [TestCase(65, 23725)]
         [TestCase(0, 0)]
         [TestCase(20, 7300)]
-        public void Circuit_Power_Calculator_Test(int year, int shouldReturn)
+        public void Convert_Age_to_Days_Test(int year, int shouldReturn)
         {
             // https://edabit.com/challenge/L2fwjYi9YixY8kJfK
             Assert.That(Domain.Convert_Age_to_Days.CalcAge(year), Is.EqualTo(shouldReturn));
