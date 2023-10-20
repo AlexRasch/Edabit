@@ -9,9 +9,19 @@ namespace Domain
     public static class Array_Of_Multiples
     {
 
-        public static int[] ArrayOfMultiples(int input1, int input2)
+        public static int[] ArrayOfMultiples(int input1, int inputLength)
         {
-            return new[] { input1, input2 };
+            // Create a new array with the length equal to inputLength
+            int[] output = new int[inputLength];
+
+            // Multiply and fill out array
+            for (int i = 0; i < output.Length; i++)
+            {
+                output[i] = input1 * i;
+            }
+
+
+            return output;
         }
 
     }
