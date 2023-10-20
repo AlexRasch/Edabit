@@ -10,7 +10,9 @@ namespace Tests
      * 
      * Create a function that takes a number (from 1 to 12) and returns its corresponding month name as a string. 
      * For example, if you're given 3 as input, your function should return "March", because March is the 3rd month.
-     * 
+     *  
+     *  - You can expect only integers ranging from 1 to 12 as test input.
+     *  
      *  https://edabit.com/challenge/uevxL5FNM77otyo9Z
      * 
      */
