@@ -20,7 +20,7 @@ namespace Tests
         public void Circuit_Power_Calculator_Test(int voltage, int current, int shouldReturn)
         {
             // https://edabit.com/challenge/L2fwjYi9YixY8kJfK
-            Assert.That(Domain.Circuit_Power_Calculator.Addition(voltage, current), Is.EqualTo(shouldReturn));
+            Assert.That(Domain.Circuit_Power_Calculator.CircuitPower(voltage, current), Is.EqualTo(shouldReturn));
         }
     }
 }
