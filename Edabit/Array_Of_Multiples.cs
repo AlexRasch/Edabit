@@ -17,9 +17,8 @@ namespace Domain
             // Multiply and fill out array
             for (int i = 0; i < output.Length; i++)
             {
-                output[i] = input1 * i;
+                output[i] = input1 * (i + 1);
             }
-
 
             return output;
         }
