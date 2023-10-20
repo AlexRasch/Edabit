@@ -19,7 +19,7 @@ namespace Domain
             {
                 if (input1[i] != input2[i])
                     difference++;
-            }         
+            }
 
             return difference;
         }
