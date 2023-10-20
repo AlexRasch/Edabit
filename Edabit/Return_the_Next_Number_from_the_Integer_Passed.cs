@@ -8,5 +8,6 @@ namespace Domain
 {
     public class Return_the_Next_Number_from_the_Integer_Passed
     {
+        public static int Addition(int inputNumber) => inputNumber + 1;
     }
 }
